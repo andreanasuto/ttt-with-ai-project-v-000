@@ -54,7 +54,6 @@ class Game
 
   def turn
     input = gets.strip
-    return "pople"
   end
 
   def play
