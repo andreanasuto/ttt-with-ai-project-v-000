@@ -1,6 +1,6 @@
 module Players
   class Human < Player
-    def move
+    def move(board)
       input = gets.strip
       input
     end
