@@ -72,6 +72,7 @@ class Game
         break
       elsif draw?
         puts "Cat's Game!"
+        break
       end
     end
 
