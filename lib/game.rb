@@ -67,10 +67,13 @@ class Game
 
   def play
     while !over?
-
+      if won?
+        puts "Congratulations #{self.winner}!"
+      elsif draw?
+        puts "Cat's Game!"
+      end
     end
-      puts "Congratulations #{self.winner}!"
-      puts "Cat's Game!"
+
   end
 
 end
