@@ -3,6 +3,5 @@ class Player
 
   def initialize(token)
     player = Player.new(token: token)
-    player.token = token
   end
 end
