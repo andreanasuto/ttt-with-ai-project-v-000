@@ -47,7 +47,7 @@ class Game
   def winner
     if self.won? && current_player.token == 'O'
       return "X"
-    else
+    elsif self.won? && current_player.token == 'X'
       return "O"
     end
   end
