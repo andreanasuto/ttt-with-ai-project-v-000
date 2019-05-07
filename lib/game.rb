@@ -37,11 +37,7 @@ class Game
   end
 
   def over?
-    if self.board.full?
-      return true
-    else
-      return false
-    end
+    won? || draw?
   end
 
   def winner
