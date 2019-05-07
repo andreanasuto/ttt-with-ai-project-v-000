@@ -24,7 +24,7 @@ class Game
     @player_2
   end
 
-  def initialize(player_1 = Player.new("X"), player_2 = Player.new("O"), board = Board.new)
+  def initialize(player_1 = Player.new("X"), player_2 = Player.new("O"), board = Board.new())
     @player_1 = player_1
     @player_2 = player_2
     @board = board
