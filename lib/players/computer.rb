@@ -1,5 +1,5 @@
 module Players
-  class Human < Player
+  class Computer < Player
     def move
       input = gets.strip
 
