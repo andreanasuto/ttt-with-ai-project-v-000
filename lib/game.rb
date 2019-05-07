@@ -43,7 +43,7 @@ class Game
 
   def winner
     if self.won?
-      return "X"
+      return current_player.token
     end
   end
 
