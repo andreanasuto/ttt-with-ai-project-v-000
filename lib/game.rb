@@ -31,6 +31,9 @@ class Game
   end
 
   def draw?
+    if self.over? && !self.won?
+      return true
+    end
   end
 
   def over?
