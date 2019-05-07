@@ -51,16 +51,26 @@ class Game
   end
 
   def turn
-    input = gets.strip
+    player = current_player
+    current_move = player.move(@board)
+    if !@board.valid_move?(current_move)
+      turn
+    else
+      puts "Turn: #{@board.turn_count+1}\n"
+      @board.display
+      @board.update(current_move, player)
+      puts "#{player.token} moved #{current_move}"
+      @board.display
+      puts "\n\n"
+    end
   end
 
   def play
-    case
-    when self.won?
-      puts "Congratulations #{self.winner}!"
-    when self.draw?
-      puts "Cat's Game!"
+    while !over?
+
     end
+      puts "Congratulations #{self.winner}!"
+      puts "Cat's Game!"
   end
 
 end
