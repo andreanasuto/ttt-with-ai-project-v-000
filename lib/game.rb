@@ -69,6 +69,7 @@ class Game
     while !over?
       if won?
         puts "Congratulations #{self.winner}!"
+        break
       elsif draw?
         puts "Cat's Game!"
       end
