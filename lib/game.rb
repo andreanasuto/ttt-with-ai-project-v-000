@@ -31,7 +31,7 @@ class Game
   end
 
   def draw?
-    if self.over? && !self.won?
+    if full? && !won?
       return true
     end
   end
