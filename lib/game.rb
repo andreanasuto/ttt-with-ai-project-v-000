@@ -45,14 +45,8 @@ class Game
   end
 
   def winner
-    if self.won?
-      if current_player.token == "O"
-        return "X"
-      elsif current_player.token == "X"
-        return "O"
-      end
-    else
-      return nil
+    if winning_combo = won?
+      @winner = @board.cells[winning_combo.first]
     end
   end
 
