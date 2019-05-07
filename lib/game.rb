@@ -69,12 +69,11 @@ class Game
     while !over?
       turn
     end
-      if won?
-        puts "Congratulations #{self.winner}!"
-      elsif draw?
-        puts "Cat's Game!"
-      end
-
+    if won?
+      puts "Congratulations #{self.winner}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
   end
 
 end
