@@ -51,8 +51,8 @@ class Game
       else
         return "O"
       end
-      else
-        return nil
+    else
+      return nil
     end
   end
 
