@@ -38,4 +38,5 @@ module Players
       end
       move
     end
+  end
 end
