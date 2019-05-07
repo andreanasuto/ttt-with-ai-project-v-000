@@ -67,6 +67,8 @@ class Game
 
   def play
     while !over?
+      turn
+    end
       if won?
         puts "Congratulations #{self.winner}!"
         break
