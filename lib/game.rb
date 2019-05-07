@@ -71,12 +71,9 @@ class Game
     end
       if won?
         puts "Congratulations #{self.winner}!"
-        break
       elsif draw?
         puts "Cat's Game!"
-        break
       end
-    end
 
   end
 
